@@ -52,7 +52,7 @@ RekmedLoginAsset::register($this);
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(<?= Url::to('@web/assets/new_rekmed_asset/img/login-register.jpg')?>);">
+    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(<?= Url::to('@web/assets/new_rekmed_asset/img/login-register.webp')?>);">
         <?= $content ?>
     </section>
     <!-- ============================================================== -->

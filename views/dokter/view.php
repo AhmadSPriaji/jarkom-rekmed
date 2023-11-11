@@ -18,7 +18,7 @@ $this->title = 'Profil : '.Html::encode($model->nama);
 <div class="row">
     <div class="col-md-3">
         <div class="profile-userpic">
-            <?= empty($model->foto) ? Html::img('@web/img/DR-avatar.png',['class'=>'img-responsive']) : Html::img('@web/'.$model->foto,['class'=>'img-responsive']) ?>
+            <?= empty($model->foto) ? Html::img('@web/img/DR-avatar.webp',['class'=>'img-responsive']) : Html::img('@web/'.$model->foto,['class'=>'img-responsive']) ?>
         </div>
         <div class="profile-usertitle">
             <div class="profile-usertitle-name"> <?= Html::encode($model->nama) ?> </div>

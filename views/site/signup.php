@@ -20,7 +20,7 @@ use yii\bootstrap\Modal;
                         'template' => "{input}<div style='color:red'>{error}</div>",
                     ],
                 ]); ?>
-        <a href="javascript:void(0)" class="text-center db"><?= Html::img('@web/assets/new_rekmed_asset/img/logo-icon.png',['alt'=>'Home'])?></a> 
+        <a href="javascript:void(0)" class="text-center db"><?= Html::img('@web/assets/new_rekmed_asset/img/logo-icon.webp',['alt'=>'Home'])?></a> 
         <h3 class="box-title m-t-40 m-b-0">Daftar Sekarang</h3><small>Buat akun anda dan gunakan REKMED</small> 
         <div class="form-group m-t-20">
           <div class="col-xs-12">
