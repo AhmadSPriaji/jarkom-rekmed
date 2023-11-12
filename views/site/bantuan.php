@@ -18,24 +18,24 @@ $this->params['breadcrumbs'][] = $this->title;
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <?= Html::img('@web/help/1.jpg') ?>
+      <?= Html::img('@web/help/1.webp') ?>
     </div>
 
     <div class="item">
-      <?= Html::img('@web/help/2.jpg') ?>
+      <?= Html::img('@web/help/2.webp') ?>
       
     </div>
 
     <div class="item">
-      <?= Html::img('@web/help/3.jpg') ?>
+      <?= Html::img('@web/help/3.webp') ?>
     </div>
 
     <div class="item">
-      <?= Html::img('@web/help/4.jpg') ?>
+      <?= Html::img('@web/help/4.webp') ?>
     </div>
 
     <div class="item">
-      <?= Html::img('@web/help/5.jpg') ?>
+      <?= Html::img('@web/help/5.webp') ?>
     </div>
   </div>
 

@@ -60,7 +60,7 @@ MetronicAsset::register($this);
             <!-- <input type="text" class="form-control" name="KunjunganSearch[mr]" style="width:80%"> -->
             <div class="page-logo">
                 <a href="http://www.rekmed.com" target="_blank">
-                    <?= Html::img('@web/metronic/layouts/layout4/img/logo-light.png', ['alt' => 'logo', 'class' => 'logo-default', 'style' => 'height:50px;margin-top:10px']) ?>
+                    <?= Html::img('@web/metronic/layouts/layout4/img/logo-light.webp', ['alt' => 'logo', 'class' => 'logo-default', 'style' => 'height:50px;margin-top:10px']) ?>
                 </a>
                 <div class="menu-toggler sidebar-toggler">
                     <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -87,7 +87,7 @@ MetronicAsset::register($this);
                                     <?php echo $realUsername != '' ? "(simulasi)" : "" ?>
                                 </span>
                                 <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
-                                <?= empty($dokter->foto) ? Html::img('@web/img/DR-avatar.png', ['class' => 'img-circle']) : Html::img('@web/' . $dokter->foto, ['class' => 'img-circle']) ?>
+                                <?= empty($dokter->foto) ? Html::img('@web/img/DR-avatar.webp', ['class' => 'img-circle']) : Html::img('@web/' . $dokter->foto, ['class' => 'img-circle']) ?>
                             </a>
                         </li>
                         <!-- END USER LOGIN DROPDOWN -->

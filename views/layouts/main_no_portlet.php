@@ -64,7 +64,7 @@ MetronicAsset::register($this);
 
 
                 <a href="http://www.rekmed.com" target="_blank">
-                    <?= Html::img('@web/metronic/layouts/layout4/img/logo-light.png', ['alt' => 'logo', 'class' => 'logo-default', 'style' => 'height:50px;margin-top:10px']) ?>
+                    <?= Html::img('@web/metronic/layouts/layout4/img/logo-light.webp', ['alt' => 'logo', 'class' => 'logo-default', 'style' => 'height:50px;margin-top:10px']) ?>
                 </a>
 
                 <div class="menu-toggler sidebar-toggler">
