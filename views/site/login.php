@@ -62,7 +62,7 @@ RekmedLoginAsset::register($this);
                     ],
                 ]); ?>
 
-                    <a href="javascript:void(0)" class="text-center db"><?= Html::img('@web/assets/new_rekmed_asset/img/logo-icon.png',['alt'=>'Home'])?></a>
+                    <a href="javascript:void(0)" class="text-center db"><?= Html::img('@web/assets/new_rekmed_asset/img/logo-icon.webp',['alt'=>'Home'])?></a>
                     <div class="form-group m-t-40">
                         <div class="col-xs-12">
                             <?= $form->field($model, 'username')->textInput(['autofocus' => true,'placeholder'=>'Username','required'=>""])->label(false) ?>
