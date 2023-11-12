@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="item">
       <?= Html::img('@web/help/2.webp') ?>
-      
+
     </div>
 
     <div class="item">

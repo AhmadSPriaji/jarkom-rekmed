@@ -10,19 +10,19 @@ use yii\widgets\ActiveForm;
 
 <div class="berita-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+	<?php $form = ActiveForm::begin(); ?>
 
-    <?= \yii\redactor\widgets\Redactor::widget([
-        'model' => $model,
-        'attribute' => 'berita'
-    ]) ?>
+	<?= \yii\redactor\widgets\Redactor::widget([
+		'model' => $model,
+		'attribute' => 'berita'
+	]) ?>
 
-    <?= $form->field($model, 'isactive')->dropDownList(['1'=>'AKTIF','0'=>'TIDAK AKTIF']) ?>
+	<?= $form->field($model, 'isactive')->dropDownList(['1' => 'AKTIF', '0' => 'TIDAK AKTIF']) ?>
 
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
-    </div>
+	<div class="form-group">
+		<?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+	</div>
 
-    <?php ActiveForm::end(); ?>
+	<?php ActiveForm::end(); ?>
 
 </div>

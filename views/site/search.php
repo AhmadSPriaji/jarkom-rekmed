@@ -9,10 +9,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
 
+	<p>
+		This is the Search page. You may modify the following file to customize its content:
+	</p>
 
-    <p>
-        This is the Search page. You may modify the following file to customize its content:
-    </p>
-
-    <code><?= __FILE__ ?></code>
+	<code><?= __FILE__ ?></code>
 </div>

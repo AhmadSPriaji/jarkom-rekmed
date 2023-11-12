@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link http://www.yiiframework.com/
  * @copyright Copyright (c) 2008 Yii Software LLC
@@ -15,16 +16,16 @@ use yii\web\AssetBundle;
  */
 class NotificAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
-    public $css = [
-        'metronic/global/plugins/jquery-notific8/jquery.notific8.min.css',
-    ];
+	public $basePath = '@webroot';
+	public $baseUrl = '@web';
+	public $css = [
+		'metronic/global/plugins/jquery-notific8/jquery.notific8.min.css',
+	];
 
-    public $js = [
-        'metronic/global/plugins/jquery-notific8/jquery.notific8.min.js',
-    ];
-    public $depends = [
-            '\yii\web\JqueryAsset'
-        ];
+	public $js = [
+		'metronic/global/plugins/jquery-notific8/jquery.notific8.min.js',
+	];
+	public $depends = [
+		'\yii\web\JqueryAsset'
+	];
 }

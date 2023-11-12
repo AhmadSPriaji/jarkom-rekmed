@@ -11,11 +11,13 @@ use yii\widgets\Breadcrumbs;
 use app\assets\RekmedLoginAsset;
 use yii\bootstrap\ActiveForm;
 use yii\bootstrap\Modal;
+
 RekmedLoginAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,12 +49,13 @@ RekmedLoginAsset::register($this);
     <!-- ============================================================== -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
     </div>
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(<?= Url::to('@web/assets/new_rekmed_asset/img/login-register.webp')?>);">
+    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(<?= Url::to('@web/assets/new_rekmed_asset/img/login-register.webp') ?>);">
         <?= $content ?>
     </section>
     <!-- ============================================================== -->
@@ -70,7 +73,8 @@ RekmedLoginAsset::register($this);
 
 
 
-<?php $this->endBody() ?>
+    <?php $this->endBody() ?>
 </body>
+
 </html>
 <?php $this->endPage() ?>

@@ -68,8 +68,7 @@ MetronicAsset::register($this);
             </div>
             <!-- END LOGO -->
             <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
-                data-target=".navbar-collapse"> </a>
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
             <!-- END RESPONSIVE MENU TOGGLER -->
 
             <!-- BEGIN PAGE TOP -->
@@ -80,8 +79,7 @@ MetronicAsset::register($this);
                         <!-- BEGIN USER LOGIN DROPDOWN -->
                         <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                         <li class="dropdown dropdown-user dropdown-light">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
-                                data-close-others="true">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                 <span class="username username-hide-on-mobile">
                                     <?= Yii::$app->user->identity->username ?>
                                     <?php echo $realUsername != '' ? "(simulasi)" : "" ?>
@@ -96,8 +94,7 @@ MetronicAsset::register($this);
                         <li class="">
                             <form method="get" action="<?= Yii::$app->urlManager->createUrl(['site/search']) ?>">
                                 <input type="hidden" name="r" value="site/search">
-                                <input type="text" class="form-control" name="q" placeholder="Cari"
-                                    style="margin-top:20px;width:800px;">
+                                <input type="text" class="form-control" name="q" placeholder="Cari" style="margin-top:20px;width:800px;">
                             </form>
                         </li>
                         <!-- END USER LOGIN DROPDOWN -->
@@ -131,7 +128,7 @@ MetronicAsset::register($this);
 
 
                 <ul class="page-sidebar-menu" data-keep-expanded="true" data-auto-scroll="true" data-slide-speed="200">
-                    <?php foreach ($menu as $menu_id => $menu_value): ?>
+                    <?php foreach ($menu as $menu_id => $menu_value) : ?>
                         <li class="nav-item">
                             <?= isset($menu_child[$menu_id]) ? '<a href="javascript:;" class="nav-link nav-toggle xpnded"><i class="fa fa-' . $menu_value['icon'] . '"></i><span class="title">' . $menu_value['nama'] . '</span><span class="arrow open"></span></a>' : Html::a('<i class="fa fa-' . $menu_value['icon'] . '"></i><span class="title">' . $menu_value['nama'] . '</span>', Url::to([$menu_value['route']])) ?>
 
@@ -148,7 +145,7 @@ MetronicAsset::register($this);
                     <?php endforeach; ?>
                     <li>
                         <?=
-                            Html::a('<i class="fa fa-commenting"></i><span class="title"> Feedback', Url::to(['feedback/index'])) ?>
+                        Html::a('<i class="fa fa-commenting"></i><span class="title"> Feedback', Url::to(['feedback/index'])) ?>
                     </li>
 
                     <li class="heading">
@@ -159,13 +156,13 @@ MetronicAsset::register($this);
                             }
                         </style>
                         <?=
-                            Html::beginForm(['/site/logout'], 'post')
+                        Html::beginForm(['/site/logout'], 'post')
                             . Html::submitButton(
                                 '<i class="icon-key"></i> Logout (' . Yii::$app->user->identity->username . ')',
                                 ['class' => 'btn btn-default pastiPas']
                             )
                             . Html::endForm()
-                            ?>
+                        ?>
                     </li>
                     <li class="nav-item">
                         <br />
@@ -186,17 +183,13 @@ MetronicAsset::register($this);
                     'links'        => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                 ]) ?>
 
-                <?php if (Yii::$app->session->getFlash('error')): ?>
-                    <div class="custom-alerts alert alert-danger fade in"><button type="button" class="close"
-                            data-dismiss="alert" aria-hidden="true"></button><span
-                            class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <?php if (Yii::$app->session->getFlash('error')) : ?>
+                    <div class="custom-alerts alert alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                         <?= Yii::$app->session->getFlash('error'); ?>
                     </div>
                 <?php endif; ?>
-                <?php if (Yii::$app->session->getFlash('success')): ?>
-                    <div class="custom-alerts alert alert-success fade in"><button type="button" class="close"
-                            data-dismiss="alert" aria-hidden="true"></button><span class="glyphicon glyphicon-ok-sign"
-                            aria-hidden="true">
+                <?php if (Yii::$app->session->getFlash('success')) : ?>
+                    <div class="custom-alerts alert alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button><span class="glyphicon glyphicon-ok-sign" aria-hidden="true">
                             <?= Yii::$app->session->getFlash('success'); ?>
                     </div>
                 <?php endif; ?>
@@ -228,10 +221,10 @@ MetronicAsset::register($this);
             $this->registerJsFile('@web/metronic/layouts/layout4/scripts/demo.min.js', ['depends' => 'app\assets\MetronicAsset']);
             $this->registerJsFile('@web/metronic/layouts/global/scripts/quick-sidebar.min.js', ['depends' => 'app\assets\MetronicAsset']);
             //to expand all expandable navitems
-// $this->registerJs("$('.xpnded').trigger('click');");
+            // $this->registerJs("$('.xpnded').trigger('click');");
             $this->endBody()
 
-                ?>
+            ?>
 </body>
 
 </html>
