@@ -36,7 +36,7 @@ tests/_support/_generated
 /.vagrant
 
 #assets
-/web/assets/
+/web/assets/*
 !/web/assets/new_rekmed_asset
 
 #database config
