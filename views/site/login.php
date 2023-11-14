@@ -5,12 +5,8 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use app\assets\RekmedLoginAsset;
 use yii\bootstrap\ActiveForm;
-use yii\bootstrap\Modal;
 
 RekmedLoginAsset::register($this);
 ?>
@@ -144,21 +140,6 @@ RekmedLoginAsset::register($this);
 					</div>
 				</div>
 				</form>
-			</div>
-		</div>
-		<div class="modal fade" id="preventClick" data-backdrop="false" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">FORGOT PASSWORD</h4>
-					</div>
-					<div class="modal-body">
-
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-link" data-dismiss="modal">TUTUP</button>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>

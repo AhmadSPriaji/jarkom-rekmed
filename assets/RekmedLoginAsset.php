@@ -22,8 +22,8 @@ class RekmedLoginAsset extends AssetBundle
 	public $baseUrl = '@web';
 	public $css = [
 		'assets/new_rekmed_asset/css/style.css',
-		'assets/new_rekmed_asset/vendors/bootstrap/css/bootstrap.min.css',
-		'assets/new_rekmed_asset/css/blue.css',
+		// 'assets/new_rekmed_asset/vendors/bootstrap/css/bootstrap.min.css',
+		// 'assets/new_rekmed_asset/css/blue.css',
 	];
 	public $js = [
 		'assets/new_rekmed_asset/vendors/jquery/jquery.min.js',
