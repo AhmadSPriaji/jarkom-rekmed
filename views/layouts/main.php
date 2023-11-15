@@ -5,8 +5,6 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\MetronicAsset;
 use app\models\Menu;
@@ -205,14 +203,11 @@ MetronicAsset::register($this);
 								</div>
 							</div>
 							<div class="portlet-body form">
-
 								<?= $content ?>
 							</div>
 						</div>
 					</div>
-
 				</div>
-
 			</div>
 
 			<?php
