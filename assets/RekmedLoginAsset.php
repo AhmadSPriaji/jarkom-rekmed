@@ -27,13 +27,13 @@ class RekmedLoginAsset extends AssetBundle
 	];
 	public $js = [
 		'assets/new_rekmed_asset/vendors/jquery/jquery.min.js',
-		'assets/new_rekmed_asset/bootstrap/js/popper.min.js',
-		'assets/new_rekmed_asset/bootstrap/js/bootstrap.min.js',
+		// 'assets/new_rekmed_asset/bootstrap/js/popper.min.js',
+		// 'assets/new_rekmed_asset/bootstrap/js/bootstrap.min.js',
 		'assets/new_rekmed_asset/js/jquery.slimscroll.js',
 		'assets/new_rekmed_asset/js/waves.js',
-		'assets/new_rekmed_asset/js/sidebarmenu.js',
+		// 'assets/new_rekmed_asset/js/sidebarmenu.js',
 		'assets/new_rekmed_asset/vendors/sticky-kit-master/dist/sticky-kit.min.js',
-		'assets/new_rekmed_asset/vendors/sparklines/jquery.sparkline.min.js',
+		// 'assets/new_rekmed_asset/vendors/sparklines/jquery.sparkline.min.js',
 		'assets/new_rekmed_asset/js/custom.min.js',
 	];
 	public $depends = [
