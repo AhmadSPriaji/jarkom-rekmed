@@ -9,13 +9,13 @@
   font-weight: 400;
   font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+/* @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: Simple-Line-Icons;
     src: url(fonts/Simple-Line-Icons.svg#Simple-Line-Icons) format("svg");
   }
-}
-[data-icon]:before {
+} */
+/* [data-icon]:before {
   font-family: Simple-Line-Icons;
   content: attr(data-icon);
   speak: none;
@@ -25,7 +25,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 .icon-action-redo,
 .icon-action-undo,
 .icon-anchor,
