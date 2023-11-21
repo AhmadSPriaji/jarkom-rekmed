@@ -26,7 +26,8 @@ RekmedLoginAsset::register($this);
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Favicon icon -->
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+	<link rel="shortcut icon" href="<?= Yii::getAlias('@web/favicon.ico') ?>" />
+	<!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png"> -->
 	<title>REKMED | Halaman Masuk Sistem</title>
 	<!-- Bootstrap Core CSS -->
 	<!-- Custom CSS -->
